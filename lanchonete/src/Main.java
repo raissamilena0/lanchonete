@@ -2,13 +2,21 @@ import model.Cliente;
 import model.Hamburguer;
 import model.Pedido;
 
+import java.util.ArrayList;
+import java.util.Arraylist;
+import java.util.list;
+
 public class Main {
     public static void main(String[] args){
 
-         Cliente cliente = new Cliente("milena","andrada");
-        Hamburguer xtudo = new Hamburguer("salada","queijo","calabresa","frango");
+         ArrayList<String> ingredientesList = new ArrayList<>();
+         ingredientesList.add("pão");
+         ingredientesList.add("queijo");
+         ingredientesList.add("hamburguer");
 
-         Pedido pedido1 = new Pedido(cliente , xtudo);
+         Cliente cliente = new Cliente( "milena","andrada");
+         Hamburguer hamburguer = new Hamburguer (ingredientes);
+         Pedido pedido1 = new Pedido(cliente,)
 
 
 
