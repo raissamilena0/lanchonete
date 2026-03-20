@@ -3,8 +3,8 @@ import model.Hamburguer;
 import model.Pedido;
 
 import java.util.ArrayList;
-import java.util.Arraylist;
-import java.util.list;
+import java.util.ArrayList;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args){
@@ -15,14 +15,15 @@ public class Main {
          ingredientesList.add("hamburguer");
 
          Cliente cliente = new Cliente( "milena","andrada");
-         Hamburguer hamburguer = new Hamburguer (ingredientes);
-         Pedido pedido1 = new Pedido(cliente,)
+         Hamburguer hamburguer = new Hamburguer (ingredientesList);
+         Pedido pedido1 = new Pedido(cliente,hamburguer);
 
 
-
-
-
-          System.out.println(pedido1.getTudo());
+         int cont_ing = 0;
+         for(int cont = 0 ; cont<6 ; cont++){
+             cont_ing += 1;
+             System.out.println(ingredientesList.get(cont));
+         }
 
 
     }

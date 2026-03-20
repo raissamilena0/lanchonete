@@ -35,7 +35,7 @@ public class Pedido {
     public void setPedido(Pedido pedido) {
         this.pedido = pedido;
     }
-    public String getTudo(){
-        return cliente.getNomeInteiro() + " : " + hamburguer.getTodosIngredientes();
+    public String setpedido1(){
+        return cliente.getNomeInteiro() + " " + hamburguer.getIngredientes();
     }
 }
