@@ -5,28 +5,30 @@ import java.util.ArrayList;
 public class Hamburguer {
 
     private ArrayList<String> ingredientes;
-    private ArrayList<String> preco;
+    private double preco;
 
-    public Hamburguer(ArrayList<String> ingredientes, ArrayList<String> preco, double preco1) {
+    public Hamburguer(ArrayList<String> ingredientes, double preco) {
         this.ingredientes = ingredientes;
         this.preco = preco;
-        Preco = preco1;
     }
 
-    double Preco;
-    public ArrayList<String> getPreco() {
-        return preco;
-    }
-
-    public void setPreco(ArrayList<String> preco) {
-        this.preco = preco;
-    }
-
-    public ArrayList getIngredientes() {
-        return this.ingredientes = ingredientes;
+    public ArrayList<String> getIngredientes() {
+        return ingredientes;
     }
 
     public void setIngredientes(ArrayList<String> ingredientes) {
         this.ingredientes = ingredientes;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public void tiraringrediente(String ingredientes){
+        this.ingredientes.remove(ingredientes);
     }
 }

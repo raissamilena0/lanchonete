@@ -13,18 +13,17 @@ public class Main {
          ingredientesList.add("pão");
          ingredientesList.add("queijo");
          ingredientesList.add("hamburguer");
-
-         Cliente cliente = new Cliente( "milena","andrada");
-         Hamburguer hamburguer = new Hamburguer (ingredientesList);
-         Pedido pedido1 = new Pedido(cliente,hamburguer);
+         ingredientesList.add("picles");
+         ingredientesList.add("ovo");
 
 
-         int cont_ing = 0;
-         for(int cont = 0 ; cont<6 ; cont++){
-             cont_ing += 1;
-             System.out.println(ingredientesList.get(cont));
+         Hamburguer hamburguer = new Hamburguer(ingredientesList,19);
+
+             System.out.println("Antes de tirar; " + hamburguer.getIngredientes());
+             hamburguer.tiraringrediente("picles");
+             System.out.println("Depois de tirar; " + hamburguer.getIngredientes());
          }
 
 
     }
-}
+
